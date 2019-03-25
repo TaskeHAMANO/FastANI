@@ -51,7 +51,7 @@ else
         AC_MSG_ERROR([Boost Library headers not found.])
     fi
     
-    AC_SUBST(mathlib, $with_boost/lib/libboost_math_c99.a)
+    AC_SUBST(mathlib, $with_boost/libboost_math_c99.a)
     AC_SUBST(mathinc, $with_boost/include)
     AC_SUBST(amcppflags, "-DUSE_BOOST")
 fi
