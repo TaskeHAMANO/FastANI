@@ -20,7 +20,7 @@ Ref <- try(read_dna_seg_from_file(subject_fasta))
 
 plotTitle = paste(query_fasta, subject_fasta, sep=" v/s ")
 
-pdf( paste(fastANI_visual_file,".pdf",sep="") )
+pdf( paste(basename(fastANI_visual_file),".pdf",sep="") )
 
 plot_gene_map(dna_segs=list(Query, Ref), comparisons=list(comparison), main=plotTitle, scale=FALSE, scale_cex=1, n_scale_ticks=4)
 
